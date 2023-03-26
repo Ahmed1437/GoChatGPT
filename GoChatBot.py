@@ -23,7 +23,4 @@ def chatbot(input, history = []):
         history.append((input, reply))
         return history, history
 
-# inputs = gr.Textbox(label="Input")
-# outputs = gr.Textbox(label="Chat")
-
 gr.Interface(fn=chatbot, inputs=["text",'state'], outputs=["chatbot",'state'], title="GoChatGPT").launch(debug = True)
