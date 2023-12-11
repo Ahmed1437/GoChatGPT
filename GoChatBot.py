@@ -5,7 +5,7 @@ import openai
 import gradio as gr
 
 # API_Key
-openai.api_key = "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"
+openai.api_key = "sk-*************************************"
 
 # Load File
 with open('prompts.json', 'r') as f:
